@@ -11,7 +11,7 @@
 		var productDollarPrice = $('.ProductMain .Value .ProductPrice.VariationProductPrice').text().replace("$", "");
 		var productParsedPrice = parseFloat(productDollarPrice);
 		var shareDiscountAmount = (Math.round((productParsedPrice*0.05)*100)/100).toFixed(2);
-		var savingsText = '<h5>Share for <span class="green">$' + shareDiscountAmount, 'off</span> this <span class="productTypeSpan">product</span></h5>';
+		var savingsText = '<h5>Share for <span class="green">$' + shareDiscountAmount 'off</span> this <span class="productTypeSpan">product</span></h5>';
 		$('.shareSlide#slidemarginleft').prepend(savingsText);
 
         var dankStopBoxProduct = $('.productTypeSpan');
